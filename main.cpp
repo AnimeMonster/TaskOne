@@ -129,8 +129,12 @@ public:
 
 int main() {
     std::cout << std::setprecision(2) << std::fixed;
+    int rows, columns;
+    std::cout << "Vvedite razmernost' matrici a:" << std::endl;
+    std::cin >> rows;
+    std::cin >> columns;
+    Matrix a(rows, columns);
     std::cout << "VVedite znacheniy matrici a: " << std::endl;
-    Matrix a(4, 4);
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.columns; j++) {
             double d;
