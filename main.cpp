@@ -53,7 +53,7 @@ public:
             for (int dimin = ro + 1; dimin < rows; ++dimin) {
                 int change = ro;
                 for (int d = ro; d < rows; d++) {
-                    if (value[d][ro] > value[change][ro])
+                    if (abs(value[d][ro]) > abs(value[change][ro]))
                         change = d;
                 }
                 rearr_rows(ro, change);
